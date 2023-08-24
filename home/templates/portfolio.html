@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    {% load static %}
+    <!-- <link rel="stylesheet" href="{% static 'styles.css' %}"> -->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: white;
+            font-family: 'Poppins', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            background-color: rgb(196, 196, 196);
+        }
+        h5{
+            margin-left: 4vw;
+            margin-top: 3vw;
+            font-size: 1.6em
+        }
+        h1{
+            padding: 30px;
+            padding-left: 60px;
+
+            background-color: skyblue;
+        }
+        .mgg{
+            display: flex;
+            justify-content: center;
+            margin-left: 4vw;
+            flex-direction: column;
+        }
+        li{
+            font-size: xx-large;
+            margin-left: 90px;
+            padding: 20px;
+        }
+        img{
+            margin-top: 3vw;
+        }
+        @media (max-width:600px){
+            h1{
+                display: flex;
+                justify-content: center;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    
+    {% load static %}
+
+        <h1>These Are The Wesites Made By Us</h1>
+        <ol>
+            <li>WebDevs</li><br>
+            <div class="mgg">
+            <img src="{% static './w11.png' %}" width="90%" alt="">
+            <img src="{% static './w12.png' %}" width="90%" alt="">
+            <img src="{% static './w11.png' %}" width="90%" alt="">
+        </div>
+            <h5>TO VISIT CLICK <a href="https://webdevs8.github.io/webdevs28/" target="_blank">//webdevs8.github.io/webdevs28/</a></h5>
+        </ol>
+
+</body>
+<script>let wi = window.outerWidth;
+    console.log(wi)</script>
+</html>

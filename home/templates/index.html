@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guide Devs</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static '/apple-touch-icon.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static '/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static '/favicon-16x16.png' %}">
+    <link rel="manifest" href="{% static '/site.webmanifest' %}">
+    <link rel="mask-icon" href="{% static '/safari-pinned-tab.svg' %}" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="Gudie Devs is a website design agency for social media influencers">
+    <meta name="author" content="Yashkaran">
+</head>
+
+<body>
+    
+    {% load static %}
+    <header>
+        <nav>
+            <img src="{% static '/gd.png' %}" width="57px" class="logo2" alt="">
+            <div class="hdr">
+            <ul>
+                <h1>Guide Devs</h1>
+            </ul>
+            <a href="#footer2"><button class="contact" type="button" class="btn btn-info">Contact Us</button></a>
+            <a href="/portfolio" class="port" type="button" role="button"  ><p id="prt">Portfolio</p></a>
+        </div>
+        </nav>
+        <div class="left">
+            <div data-aos="flip-left" data-aos-duration="2000" class="heading">
+                Guide Devs is a website design agency for social media influencers and creators
+            </div>
+            <div class="btnn">
+            <div class="btns">
+                <div class="cn1"></div>
+                <a href="#hee1">
+                    <div class="btn1">Start Project</div>
+                </a>
+                <a href="#body2">
+                    <div class="btn2">Why Choose Us</div>
+                </a>
+            </div>
+            <div data-aos="flip-right" data-aos-duration="1900" class="logo">
+                <img src="{% static '/gd.png' %}" data-aos="fade-down-right" data-aos-duration="1900" width="500px" alt="">
+            </div>
+            <div class="cn2">
+                <a href="#pack">
+                    <div class="btn3">Prices</div>
+                </a>
+                <a href="#container">
+                    <div class="btn4">Send Message</div>
+                </a>
+            </div>
+        </div>
+        </div>
+        </div>
+    </header>
+    <main>
+        <div class="body1" id="bodyy1">
+            <div data-aos="slide-right" id="hee1" class="he1">
+                Want To Start A Project
+            </div>
+            <div data-aos="fade-right" class="des1">
+                Welcome to Guide Devs, the premier web design agency for social media influencers and creators. Our
+                expert
+                team creates stunning, personalized websites that elevate your online presence. From mobile-friendly
+                designs
+                to seamless social media integration, we ensure your brand shines across all platforms. Unleash your
+                potential with Guide Devs <br> Fill The Given Below Form To Get Started
+            </div>
+            <div class="vl"></div>
+            <div class="des2" data-aos="slide-left">
+                <img class="phelo" src="{% static './Philosophy-fotor-2023072917257.png' %}" alt="">
+                <!-- FILL THE GIVEN BELOW FORM TO START A PROJECT WITH US! -->
+            </div>
+        </div>
+        <div data-aos="flip-up" class="im1">
+            <img src="{% static './im1.png' %}" width="500px" alt="">
+        </div>
+        <div class="container" id="container">
+            <form method="post" action="/">{% csrf_token %}
+                <div class="send">
+                    <h3 id="send">Send Message!</h3>
+                </div>
+                <label for="fname">First Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name..">
+
+                <label for="email">Enter your email</label><br>
+                <input type="email" id="email" name="email" placeholder="Your email.."><br>
+
+                <label for="subject">Enter your website idea</label>
+                <textarea id="subject" name="subject" placeholder="I want website which has ..."
+                    style="height:200px"></textarea>
+
+                <button type="submit" name="submit" class="submit">Submit</button>
+            </form>
+        </div>
+        <div data-aos="fade-up" class="img1">
+            <img src="{% static './img1.png' %}" width="89%" alt="">
+        </div>
+        <div class="img2">
+            <img src="{% static './Services.png' %}" width="89%" alt="">
+        </div>
+        <div class="body2" id="body2">
+            <div data-aos="fade-right" data-aos-offset="0"  class="img3">
+                <img src="{% static './Home.png' %}" width="37.9%" alt="">
+            </div>
+            <div data-aos="fade-left" id="chosus" width="30%" class="img3r">
+                <h2>WHY CHOOSE US?</h2>
+                <p class="hh2">Choose us, a specialized web development agency for social media influencers. Our skilled team
+                    creates visually appealing, personalized websites with seamless user experiences. Boost your online
+                    influence with our social media integration and search engine optimization expertise. Experience
+                    top-notch support and timely project delivery, taking your digital presence to new heights.</p>
+            </div>
+        </div>
+        <div class="h33">
+            <h3>Plans For Webdevelopment | Prices</h3>
+            </div>
+        <div class="pack" id="pack">
+            
+            <div class="basic">
+                <div class="basic1">
+
+                    <h3 class="b2">Basic</h3>
+                    <h4 class="dllr">$</h4>
+                    <h4 class="b1">99</h4>
+                    <hr>
+                </div>
+                <ul>
+                    <li>3 Page Website</li>
+                    <li>Fully Responsive</li>
+                    <li>Unlimited Videos and Images</li>
+                    <li>social Media integration</li>
+                    <li>Admin Control</li>
+                    <li>Contact Form</li>
+                </ul>
+                <a href="/basic"><button type="submit" class="btnn1">Apply</button></a>
+            </div>
+            <div class="inter">
+                <div class="inter1">
+                    <h3 class="i2">Intermediate</h3>
+                    <h4 class="dllr">$</h4>
+                    <h4 class="i1">150</h4>
+                    <hr>
+                </div>
+                <ul>
+                    <li>7 Page Website</li>
+                    <li>Fully Responsive</li>
+                    <li>Contact Form </li>
+                    <li>Payment integration</li>
+                    <li>Admin Control</li>
+                    <li>Unlimited Videos and Images</li>
+                    <li>social Media integration</li>
+                    <li>Customized Animations</li>
+                </ul>
+                <a href="/inter"><button type="submit" class="btnn2">Apply</button></a>
+            </div>
+            <div class="premium">
+                <div class="premium1">
+                    <h3 class="p2">premium</h3>
+                    <h4 class="dllr">$</h4>
+                    <h4 class="p1">199</h4>
+                    <hr>
+                </div>
+                <ul>
+                    <li>10 Page Website</li>
+                    <li>Fully Responsive</li>
+                    <li>Contact Form </li>
+                    <li>Payment integration</li>
+                    <li>Admin Control</li>
+                    <li>Unlimited Videos and Images</li>
+                    <li>social Media integration</li>
+                    <li>SEO ready website</li>
+                    <li>Customized Animations</li>
+                </ul>
+                <a href="/premium"><button type="submit" class="btnn3">Apply</button></a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h1 class="fh1">HAVE A GENERAL ENQUIRY</h1>
+        <h2 class="fh2">Contact Us At</h2>
+        <h3 class="fh3">guidedevs28@gmail.com</h3>
+        <div class="cnn"><h4 >OR CONTATC US AT</h4></div>
+
+
+        <!-- Add font awesome icons -->
+        <a href="https://www.facebook.com/profile.php?id=61550069695844" class="fa fa-facebook"></a>
+        <a href="https://www.instagram.com/guidedevs/" class="fa fa-instagram"></a>
+        <a href="https://twitter.com/GuideDevs" class="fa fa-twitter"></a>
+        <a href="https://www.linkedin.com/in/guide-devs-064b8a287/" class="fa fa-linkedin"></a>
+
+        <div class="footer2" id="footer2">
+            <p>As the sun sets on a remarkable chapter, Guide Devs stands tall as a beacon of creativity and
+                innovation. With unwavering commitment, we've woven extraordinary digital experiences, leaving an
+                indelible mark. Grateful for clients, team, and supporters, we embrace the future, pushing boundaries,
+                and redefining possibilities. Together, we'll inspire the world and leave a legacy of excellence in web
+                design. The journey continues, brighter than ever before. <br><div class="have">Have a Great day</div> </p>
+        </div>
+    </footer>
+    <script >
+  
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 220,
+            duration: 1100,
+        });
+    </script>
+</body>
+
+</html>
